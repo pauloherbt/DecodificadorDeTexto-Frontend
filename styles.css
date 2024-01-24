@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#F3F5FC;
+    --second-color:white;
+    --third-color:#0A3871;
+}
+body{
+    background-color: var(--primary-color);
+}
+.menu{
+    margin: 0 2.5rem 0 15rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+}
+.menu_principal{
+    padding: 2rem 0;
+    gap: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.input_text, .input_text::placeholder, .input_text:focus{
+   font-family: 'Inter', sans-serif;
+   color: var(--third-color);
+   font-size: 2rem;
+   border: none;
+   width: 40rem;
+   height: 30rem;
+   text-align: start;
+   resize: none;
+   background-color: var(--primary-color);
+   outline: 0;
+}
+.menu_principal_acoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+}
+.menu_principal_botoes{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.botao_criptografar, .botao_descriptografar{
+    background-color: var(--third-color);
+    font-size: 1rem;
+    padding: 1.5rem 1.5rem;
+    color: var(--second-color);
+    border-radius: 1rem;
+    width: 20rem;
+}
+.menu_exibir{
+    width: auto;
+    background-color: var(--second-color);
+}

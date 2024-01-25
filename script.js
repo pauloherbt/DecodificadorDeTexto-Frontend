@@ -7,6 +7,9 @@ function criptografar(){
     output= output.replace(/o/g,"ober");
     output= output.replace(/u/g,"ufat");
     document.getElementsByClassName('menu_texto_resultado').item(0).innerHTML=output;
+    document.getElementsByClassName('menu_info').item(0).style.display="none";
+    document.getElementsByClassName('botao_copiar').item(0).removeAttribute("hidden");
+
 }
 function descriptografar() {
     let text= document.getElementsByClassName('input_text').item(0).value;
